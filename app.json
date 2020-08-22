@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/city/city",
+    "pages/mime/mime",
+    "pages/other/testOne/testOne",
+    "pages/other/testTwo/testTwo",
+    "pages/other/testThree/testThree"  
+],
+  "tabBar": {
+    "color": "#545454",
+    "selectedColor": "#07C99B",
+    "list": [
+      {
+        "text": "首页",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index-act.png",
+        "pagePath": "pages/index/index"
+      },
+      {
+        "text": "城市",
+        "iconPath": "images/city.png",
+        "selectedIconPath": "images/city-act.png",
+        "pagePath": "pages/city/city"
+      }
+      ,
+      {
+        "text": "我的",
+        "iconPath": "images/city.png",
+        "selectedIconPath": "images/city-act.png",
+        "pagePath": "pages/mime/mime"
+      }
+    ]
+  },
+  "window": {
+    "navigationStyle": "custom",
+    "enablePullDownRefresh": true
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "customPage": "./components/customPage/customPage"
+  },
+  "useExtendedLib": {
+    "weui": true
+  }
+
+}

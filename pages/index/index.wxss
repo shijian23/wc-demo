@@ -1,0 +1,18 @@
+
+.index-page{
+    text-align: center;
+    color: #000000;
+    margin: 15rpx;
+    font-size: 50rpx;
+}
+
+.navArea .nav {
+    margin: 10rpx;
+    background: #07c99b;
+    color: #ffffff;
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 40rpx;
+    border-radius: 10rpx;
+    text-align: center;
+}

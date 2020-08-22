@@ -1,0 +1,118 @@
+/**app.wxss**/
+view, text, button, input, scroll-view, navigator, textarea {
+    box-sizing: border-box;
+    /* color: #000; */
+}
+/* 常用字体大小 */
+.font16{
+  font-size: 32rpx;
+}
+.font22{
+  font-size: 44rpx;
+}
+.font14{
+  font-size: 28rpx;
+}
+.font18{
+  font-size: 36rpx;
+}
+.themeColor{
+  color: #3EB16E!important;
+}
+/* 省略号 */
+.ellipsis{
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+/* 多行省略号 */
+.ellipsisLine{
+  text-overflow:ellipsis;
+  overflow:hidden;
+  display:-webkit-box;
+  -webkit-line-clamp:4; /*这个数字是设置要显示省略号的行数*/
+  -webkit-box-orient:vertical;
+}
+.btnBox{
+  position: absolute;
+  bottom: 90rpx;
+  width: 100%;
+}
+.rectBtnBox{
+  bottom: 0rpx;
+}
+/* 提交按钮 */
+button.submitBtn{
+  width: 100%;
+  height: 94rpx;
+  background: #3eb16e;
+  border-radius: 10rpx;
+  color: #fff;
+  border: 0;
+  font-size: 36rpx;
+  font-weight: normal;
+  line-height: 1.7;
+}
+.rectBtnBox .submitBtn{
+  border-radius: 0;
+  width: 100%;
+}
+.btn.submitBtn[disabled]{
+  background: #2BA25C;
+  color: #fff;
+  opacity: 0.5;
+}
+/* 提示信息 */
+.tips{
+  height: 70rpx;
+  background: #e64340;
+  color: #fff;
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 70rpx;
+}
+.numTips{
+  color: #888888;
+  font-size: 30rpx;
+  margin-top: 18rpx;
+  text-align: right;
+  padding-right: 18rpx;
+  font-family: PingFangSC-Regular;
+}
+.weui-dialog__btn.weui-dialog__btn_primary{
+  color: #3eb16e;
+}
+.weui-dialog .weui-dialog__bd{
+  margin-bottom: 26rpx;
+} 
+/* 菜单栏 */
+.comNav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 34rpx;
+  height: 88rpx;
+  padding-right: 30rpx;
+  border-top: 1px solid #E5E5E5;
+  position: relative;
+}
+.comNav .date{
+  padding-right: 35rpx;
+  color: #888888;
+  position: relative;
+}
+.comNav .date::after{
+  content: " ";
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  border-width: 2px 2px 0 0;
+  border-color: #b2b2b2;
+  border-style: solid;
+  -webkit-transform: matrix(.71,.71,-.71,.71,0,0);
+  transform: matrix(.71,.71,-.71,.71,0,0);
+  position: absolute;
+  top: 50%;
+  margin-top: -3px;
+  right: 0;
+}

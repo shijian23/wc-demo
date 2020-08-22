@@ -1,0 +1,5 @@
+<!--components/custom-page/custom-page.wxml-->
+<view style="padding-top:{{navH}}rpx;" class="my-class pageRoot">
+  <customNavBar title="{{title}}" isFirstPage="{{isFirstPage}}" backUrl="{{backUrl}}" bind:backSave="backSave"> </customNavBar>
+  <slot ></slot>
+</view>

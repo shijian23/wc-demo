@@ -1,0 +1,6 @@
+/* components/custom-page/custom-page.wxss */
+.pageRoot{
+  min-height: 100vh;
+  background: #F0F4F6;
+  font-family: Source Han Sans CN;
+}

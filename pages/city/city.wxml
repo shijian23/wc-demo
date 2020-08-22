@@ -1,0 +1,5 @@
+<custom-page title="城市" isFirstPage="true">
+    <view class="city-page">
+        城市
+    </view>
+</custom-page>

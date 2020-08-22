@@ -1,0 +1,36 @@
+<customPage title="练习页面一">
+    <!-- 是否显示圆点，自动播放，间隔时间，监听滚动和点击事件 -->
+    <swiper indicator-dots="{{false}}" autoplay="{{false}}" bindchange="listenSwiper" current="{{activeSwiper}}">
+        <!-- 注意：其中只可放置<swiper-item/>组件，否则会导致未定义的行为 -->
+        <!-- swiper-item只能包含一个节点再多会自动删除 -->
+        <block wx:for="{{tabs}}" wx:key="id">
+            <swiper-item>
+                <view class="pane" item-id="{{item.id}}">
+                    <view class="name">{{item.name}}</view>
+                    <view class="num">{{item.num}}</view>
+                    <image wx:if="{{arrowActive}}" bindtap="changePane" src="../../../images/rightTip.png" alt="right" class="iconRightCss" />
+                    <image wx:else="{{arrowActive}}" bindtap="changePane" src="../../../images/back.png" alt="left" class="iconLeftCss" />
+                </view>
+            </swiper-item>
+        </block>
+    </swiper>
+    <mp-cells ext-class="my-cells" title="带说明的列表项">
+        <mp-cell value="标题文字" footer="说明文字"></mp-cell>
+        <mp-cell>
+            <view>标题文字（使用slot）</view>
+            <view slot="footer">说明文字</view>
+        </mp-cell>
+        <mp-cell>
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{itemArray}}">
+                <view class="picker">当前选择：{{itemArray[index]}}</view>
+            </picker>
+        </mp-cell>
+        <mp-slideview buttons="{{slideButtons}}" bindbuttontap="slideButtonTap">
+            <mp-cell value="左滑可以删除" footer="说明文字"></mp-cell>
+        </mp-slideview>
+    </mp-cells>
+    <camera device-position="back" flash="off" binderror="error" style="width: 100%; height: 300px;"></camera>
+    <button type="primary" bindtap="takePhoto">拍照</button>
+    <view>预览</view>
+    <image mode="widthFix" src="{{src}}"></image>
+</customPage>
