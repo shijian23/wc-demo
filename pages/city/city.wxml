@@ -1,5 +1,3 @@
-<custom-page title="城市" isFirstPage="true">
-    <view class="city-page">
-        城市
-    </view>
-</custom-page>
+<customPage title="城市">
+	<menu list="{{list}}">1111</menu>
+</customPage>

@@ -1,0 +1,79 @@
+.changeNamePage .title{
+  font-size: 28rpx;
+  color: #888;
+  padding: 28rpx 40rpx;
+}
+.changeNamePage .btnBox{
+  position: absolute;
+  bottom: 116rpx;
+  width: 100%;
+}
+.changeNamePage .btnBox .btn{
+  width: 88%;
+}
+/* input输入框 */
+.iptBox{
+  background: #fff;
+  height: 88rpx;
+  display: flex;
+  align-items: center;
+  box-shadow: 0rpx 0pt 4rpx 0rpx rgba(0,0,0,0.04);
+}
+.iptBox .label{
+  font-size: 34rpx;
+  font-weight: 500;
+  width: 180rpx;
+  padding-left: 32rpx;
+}
+.iptBox  input{
+  flex: 1;
+  height: 100%;
+  padding-right: 20rpx;
+}
+/* 提交按钮 */
+button.submitBtn{
+  width: 100%;
+  height: 94rpx;
+  background: #3eb16e;
+  border-radius: 10rpx;
+  color: #fff;
+  border: 0;
+  font-size: 36rpx;
+  font-weight: normal;
+  line-height: 1.7;
+}
+.btn.submitBtn[disabled]{
+  background: #2BA25C;
+  color: #fff;
+  opacity: 0.5;
+}
+/* 提示信息 */
+.tips{
+  height: 70rpx;
+  background: #e64340;
+  color: #fff;
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 70rpx;
+}
+.textareaBox{
+  width: 100%;
+  background: #fff;
+
+}
+textarea{
+  width: 100%;
+  height: 320rpx;
+  padding: 20rpx 25px;
+  font-size: 34rpx;
+  box-shadow: 0rpx 0pt 2rpx 0rpx rgba(0,0,0,0.04);
+}
+.numTips{
+  color: #888888;
+  font-size: 30rpx;
+  padding-top: 18rpx;
+  text-align: right;
+  padding-right: 18rpx;
+  font-family: PingFangSC-Regular;
+  background: #F0F4F6;
+}

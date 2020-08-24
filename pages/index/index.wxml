@@ -1,5 +1,5 @@
 <customPage title="首页" isFirstPage="true">
-    <view class="index-page">首页展示部分</view>
+    <view class="index-page">首页部分</view>
     <view class="navArea">
         <view wx:for="{{navList}}" wx:key="id">
             <navigator class="nav" url="{{item.url}}">{{item.title}}</navigator>

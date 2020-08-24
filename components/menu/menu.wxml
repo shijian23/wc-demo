@@ -1,0 +1,13 @@
+<!--components/no-data/no-data.wxml-->
+<view class="menuRoot">
+   <navigator 
+      url="{{item.url}}" 
+      hover-class="navigator-hover"  
+      class="menuItem"
+      wx:for="{{list}}"
+      wx:key="name"
+   >
+    <!-- <image src = "/images/{{item.icon}}"></image> -->
+    <text>{{item.name}}</text>
+   </navigator>
+</view>

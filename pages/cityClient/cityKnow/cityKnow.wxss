@@ -1,0 +1,89 @@
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #f6f6f6;
+    padding: 50rpx 0;
+}
+.card {
+    width: 100vw;
+    height: 180px;
+    background-color: #ffffff;
+    margin: 20px 0;
+    padding: 20rpx;
+}
+
+.card .title {
+    font-weight: 500;
+    font-size: 20px;
+    margin: 8px 0 8px 0;
+    display: block;
+}
+.leftContent {
+    width: 68vw;
+    font-size: 15px;
+    margin: 8px 10px 0 0;
+}
+.des {
+    display: block;
+    width: 100%;
+    height: 50px;
+}
+.comment {
+    display: inline;
+}
+.name {
+    display: inline;
+    font-weight: 400;
+}
+.rightImg {
+    width: 30vw;
+    height: 120px;
+    float: right;
+}
+.imageSet {
+    width: 100%;
+    height: calc(100vw * 633 / 640);
+}
+.bottom {
+    display: flex;
+    width: 100%;
+    height: 120px;
+}
+.ops {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+.agree {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 30px;
+    background-color: #56a5df;
+    border-radius: 4px;
+    color: #ffffff;
+    margin-right: 10px;
+}
+.disAgree {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 30px;
+    background-color: #56a5df;
+    border-radius: 4px;
+    color: #ffffff;
+    margin-right: 10px;
+
+}
+.commentList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 30px;
+    background-color: #56a5df;
+    border-radius: 4px;
+    color: #ffffff;
+}

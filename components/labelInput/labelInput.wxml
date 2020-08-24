@@ -1,0 +1,28 @@
+<view class="changeNamePage">
+  <view class="tips" wx:if = "{{!!showTips}}">{{showTips}}</view>
+  <view class="title" wx:if = "{{showTitle}}">{{title}}</view>
+  <view class="iptBox" wx:if = "{{!isTextArea}}">
+      <text class="label my-class">{{labelName}}</text>
+      <input 
+        placeholder="{{title}}" 
+        type="{{type}}"
+        value="{{defalutVal}}"
+        bindinput = "_changeIpt" 
+        maxlength= "{{maxlength}}"
+    ></input>
+  </view>
+  <view class="textareaBox" wx:else>
+    <textarea  
+      placeholder="{{title}}" 
+      bindinput = "_changeIpt" 
+      value="{{defalutVal}}"
+      placeholder-style="color:#B2B2B2;"
+      maxlength="{{maxlength}}"
+    ></textarea >
+    <view class="numTips">{{val.length}}/{{maxlength}}字</view>
+  </view>
+  <view class="btnBox">
+    <button class= "submitBtn btn" bindtap="toSubmit" disabled = "{{loading}}"> 完成</button>
+  </view>
+  <slot></slot>
+</view>

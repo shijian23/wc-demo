@@ -3,17 +3,17 @@ const app = getApp();
 const navList = [
     {
         id: 1,
-        title: "练习页面一",
+        title: "一",
         url: "/pages/other/testOne/testOne"
     },
     {
         id: 2,
-        title: "练习页面二",
+        title: "二",
         url: "/pages/other/testTwo/testTwo"
     },
     {
         id: 3,
-        title: "练习页面三",
+        title: "三",
         url: "/pages/other/testThree/testThree"
     },
 ]

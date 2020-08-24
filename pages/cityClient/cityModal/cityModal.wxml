@@ -1,0 +1,22 @@
+<customPage title="弹窗">
+    <button class="btn" type="primary" bindtap="onModalTap">按钮</button>
+    <button class="btn" type="primary" bindtap="alertModal">延时按钮</button>
+    <commonModal show="{{showModal}}" bindcancel="modalCancel" bindconfirm="modalConfirm" single="{{true}}" ready="{{ready}}" time="{{time}}" timeClose="{{timeClose}}">
+        <block>
+            <view class="" hover-class="none" hover-stop-propagation="false">
+                <text>请阅读五秒后再关闭</text>
+            </view>
+        </block>
+    </commonModal>
+    <button class='btn1' open-type='contact'>
+        <image class='btnImg' src='../../../images/customer-service.png'></image>
+        <view>联系客服</view>
+    </button>
+    <button class='btn2' open-type='openSetting'>
+        <image class='btnImg' src='../../../images/setting.png'></image>
+        <view>授权设置</view>
+    </button>
+    <button  bindtap="toastTest" >toast按钮</button>
+    <button  bindtap="actionSheetTest" >操作菜单按钮</button>
+    <!-- 自定义按钮  https://www.jianshu.com/p/93d7104be420 -->
+</customPage>

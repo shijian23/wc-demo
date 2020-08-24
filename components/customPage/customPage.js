@@ -9,10 +9,10 @@ Component({
         isFirstPage: Boolean,
         hasBackEvent: {
             type: Boolean,
-            value: false
-        }
+            value: false,
+        },
     },
-    externalClasses: ['my-class'],
+    externalClasses: ["my-class"],
 
     /**
      * 组件的初始数据
@@ -28,8 +28,8 @@ Component({
     methods: {
         backSave() {
             if (this.properties.hasBackEvent) {
-                this.triggerEvent('backSave', true);
+                this.triggerEvent("backSave", true);
             }
-        }
-    }
-})
+        },
+    },
+});

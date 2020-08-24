@@ -1,0 +1,23 @@
+<view class="container">
+    <block wx:for="{{list}}" wx:key="id">
+        <view class="card" hover-class="none" hover-stop-propagation="false" bindtap="goTo">
+            <text class="title">{{item.title}}</text>
+            <view class="bottom">
+                <view class='leftContent'>
+                    <view class="des">
+                        <view class="name">{{item.name}}:</view>
+                        <view class="comment">{{item.comment}}</view>
+                    </view>
+                    <view class="ops">
+                        <view class="agree">赞同 {{item.agree}}</view>
+                        <view class="disAgree">不赞同</view>
+                        <view class="commentList">评论 {{item.commentCount}}</view>
+                    </view>
+                </view>
+                <view class="rightImg">
+                    <image class="imageSet" src="{{item.src}}" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
+                </view>
+            </view>
+        </view>
+    </block>
+</view>

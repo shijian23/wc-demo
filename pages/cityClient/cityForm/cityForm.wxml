@@ -1,0 +1,11 @@
+<customPage title="表单">
+    <labelInput
+        isTextArea = "{{true}}"
+        labelName = "住址" 
+        tips = "住址格式不正确" 
+        title = "请输入真实住址" 
+        defalutVal = "{{defalutVal}}"
+        maxlength = "30"
+        verificName = "noEmoji"
+    ></labelInput>
+</customPage>
