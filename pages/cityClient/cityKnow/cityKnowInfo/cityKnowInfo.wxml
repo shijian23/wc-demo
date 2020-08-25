@@ -1,1 +1,29 @@
-<view class="container">45454654321321321</view>
+<customPage title="详情">
+    <tabs bindmyTab="myTab" currentIndex="{{currentIndex}}">
+        <view class="tab1" wx:if="{{currentIndex === 0 ? true : false}}">
+            <swiper class="swiper" next-margin="140rpx" current-item-id="{{currentItemId}}" previous-margin="140rpx" bindchange="swiperChange">
+                <block wx:for="{{backClass}}" wx:key="index">
+                    <swiper-item item-id="{{index}}" data-item-id="{{index}}" bindtap='clickChange' bind:myClick="myClick">
+                        <view class='li'>
+                            <view class='li1 {{item.class}} {{currentItemId == index ? "selected" : ""}}'></view>
+                        </view>
+                    </swiper-item>
+                </block>
+            </swiper>
+            <view class="myClick" bindtap="myClick">22222</view>
+        </view>
+        <view class="tab1" wx:if="{{currentIndex === 1 ? true : false}}">
+            <swiper class="swiper" indicator-dots="{{true}}"  next-margin="140rpx" current-item-id="{{currentItemId}}" previous-margin="140rpx" bindchange="swiperChange">
+                <block wx:for="{{backClass}}" wx:key="index">
+                    <swiper-item item-id="{{index}}" data-item-id="{{index}}" bindtap='clickChange' >
+                        <view class='li'>
+                            <view class='li1 {{item.class}} {{currentItemId == index ? "selected" : ""}}'></view>
+                        </view>
+                    </swiper-item>
+                </block>
+            </swiper>
+        </view>
+        <view class="tab1" wx:if="{{currentIndex === 2 ? true : false}}">2</view>
+        <view class="tab1" wx:if="{{currentIndex === 3 ? true : false}}">3</view>
+    </tabs>
+</customPage>

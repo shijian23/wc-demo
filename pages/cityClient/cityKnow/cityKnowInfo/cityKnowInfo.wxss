@@ -1,0 +1,26 @@
+.li {
+    width: 100%;
+    height: 252rpx;
+}
+.li1 {
+    width: 446rpx;
+    margin: 0 auto;
+    border-radius: 10rpx;
+    height: 282rpx;
+    transform: scale(0.9);
+}
+.selected {
+    transform: scale(1);
+}
+.red {
+    background: red;
+}
+.blue {
+    background: blue;
+}
+.green {
+    background: green;
+}
+.orange {
+    background: orange;
+}
