@@ -1,5 +1,6 @@
 {
     "usingComponents": {
-        "tabs": "../../../../components/tabs/tabs"
+        "tabs": "../../../../components/tabs/tabs",
+        "passwordInput" : "../../../../components/passwordInput/passwordInput"
     }
 }

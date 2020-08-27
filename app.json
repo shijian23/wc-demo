@@ -5,7 +5,11 @@
         "pages/mime/mime",
         "pages/other/testOne/testOne",
         "pages/other/testTwo/testTwo",
-        "pages/cityClient/cityForm/cityForm"
+        "pages/cityClient/cityForm/cityForm",
+        "pages/cityClient/cityKnow/cityKnow",
+        "pages/cityClient/cityModal/cityModal",
+        "pages/cityClient/cityKnow/cityKnowInfo/cityKnowInfo",
+        "pages/cityClient/cityKnow/cityKnowInfo/cityKnowPass/cityKnowPass"
     ],
     "tabBar": {
         "color": "#545454",

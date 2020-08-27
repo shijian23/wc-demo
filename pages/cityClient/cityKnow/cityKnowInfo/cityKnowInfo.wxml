@@ -13,9 +13,9 @@
             <view class="myClick" bindtap="myClick">22222</view>
         </view>
         <view class="tab1" wx:if="{{currentIndex === 1 ? true : false}}">
-            <swiper class="swiper" indicator-dots="{{true}}"  next-margin="140rpx" current-item-id="{{currentItemId}}" previous-margin="140rpx" bindchange="swiperChange">
+            <swiper class="swiper" indicator-dots="{{true}}" next-margin="140rpx" current-item-id="{{currentItemId}}" previous-margin="140rpx" bindchange="swiperChange">
                 <block wx:for="{{backClass}}" wx:key="index">
-                    <swiper-item item-id="{{index}}" data-item-id="{{index}}" bindtap='clickChange' >
+                    <swiper-item item-id="{{index}}" data-item-id="{{index}}" bindtap='clickChange'>
                         <view class='li'>
                             <view class='li1 {{item.class}} {{currentItemId == index ? "selected" : ""}}'></view>
                         </view>
@@ -23,7 +23,11 @@
                 </block>
             </swiper>
         </view>
-        <view class="tab1" wx:if="{{currentIndex === 2 ? true : false}}">2</view>
+        <view class="tab1" wx:if="{{currentIndex === 2 ? true : false}}">
+            <navigator url="/pages/cityClient/cityKnow/cityKnowInfo/cityKnowPass/cityKnowPass" hover-class="navigator-hover" open-type="navigate">
+                下一步
+            </navigator>
+        </view>
         <view class="tab1" wx:if="{{currentIndex === 3 ? true : false}}">3</view>
     </tabs>
 </customPage>

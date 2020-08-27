@@ -11,7 +11,7 @@ Component({
             },
             {
                 id: 3,
-                name: "其他",
+                name: "密码",
             },
             {
                 id: 4,
