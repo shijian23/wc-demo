@@ -1,6 +1,11 @@
 {
-    "usingComponents": {
-        "tabs": "../../../../components/tabs/tabs",
-        "passwordInput" : "../../../../components/passwordInput/passwordInput"
-    }
+	"usingComponents": {
+		"tabs": "../../../../components/tabs/tabs",
+		"passwordInput": "../../../../components/passwordInput/passwordInput",
+		"triangle": "../../../../components/triangle/triangle",
+		"commonTitle": "../../../../components/commonTitle/commonTitle",
+		"customBox": "../../../../components/customBox/customBox",
+		"van-button": "../../../../miniprogram_npm/@vant/weapp/button/index",
+		"van-calendar": "../../../../miniprogram_npm/@vant/weapp/calendar/index"
+	}
 }

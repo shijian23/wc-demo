@@ -1,0 +1,8 @@
+<view class="container" bind:tap="goToNewPage">
+  <view class="topImage">
+    <image src="../../images/haha.svg" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
+  </view>
+  <view class="descText">
+    {{descText}}
+  </view>
+</view>

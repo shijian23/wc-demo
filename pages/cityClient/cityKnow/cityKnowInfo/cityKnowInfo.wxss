@@ -1,26 +1,45 @@
+.cardTab {
+	width: 100%;
+	height: 382rpx;
+}
+.swiper {
+	height: 382rpx;
+}
+
 .li {
-    width: 100%;
-    height: 252rpx;
+	width: 100%;
+	height: 382rpx;
 }
-.li1 {
-    width: 446rpx;
-    margin: 0 auto;
-    border-radius: 10rpx;
-    height: 282rpx;
-    transform: scale(0.9);
+.liSelect {
+	width: 596rpx;
+	margin: 0 auto;
+	border-radius: 10rpx;
+	height: 330rpx;
 }
-.selected {
-    transform: scale(1);
+
+.cardTab .wx-swiper-dot {
+	width: 10rpx;
+	height: 10rpx;
+	border-radius: 20rpx;
+    background: #808080;
 }
+
+.cardTab .wx-swiper-dot-active {
+	width: 30rpx;
+	height: 10rpx;
+	border-radius: 20rpx;
+    background: #ff2d00;
+}
+
 .red {
-    background: red;
+	background: red;
 }
 .blue {
-    background: blue;
+	background: blue;
 }
 .green {
-    background: green;
+	background: green;
 }
 .orange {
-    background: orange;
+	background: orange;
 }

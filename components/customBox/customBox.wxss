@@ -1,0 +1,28 @@
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 130rpx;
+	height: 156rpx;
+}
+.topImage {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 96rpx;
+	height: 96rpx;
+	background: linear-gradient(310deg, #fbab4a 17%, #f6ddb7 80%);
+	border-radius: 24px;
+}
+.topImage image {
+	width: 84rpx;
+}
+
+.descText {
+	font-size: 14px;
+	font-weight: 400;
+	text-align: center;
+	color: #172b4d;
+	letter-spacing: 0px;
+}
